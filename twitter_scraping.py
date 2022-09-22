@@ -10,19 +10,19 @@ PATH = "C:\\Users\\Ujjwa\\Downloads\\chromedriver_win32\\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
 driver.get("https://twitter.com/login")
 
-subject = "RKMVERI"
+subject = "Goutam Adani"
 
 
 # Setup the log in
 sleep(3)
 username = driver.find_element(By.XPATH,"//input[@name='text']")
-username.send_keys("INPUT_YOUR_USERNAME")
+username.send_keys("uc.rkmveri@gmail.com")
 next_button = driver.find_element(By.XPATH,"//span[contains(text(),'Next')]")
 next_button.click()
 
 sleep(3)
 password = driver.find_element(By.XPATH,"//input[@name='password']")
-password.send_keys('INPUT_YOUR_PASSWORD')
+password.send_keys('asdfghjkl`1234567890')
 log_in = driver.find_element(By.XPATH,"//span[contains(text(),'Log in')]")
 log_in.click()
 

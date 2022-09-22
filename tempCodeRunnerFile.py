@@ -5,11 +5,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 
+
 PATH = "C:\\Users\\Ujjwa\\Downloads\\chromedriver_win32\\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
 driver.get("https://twitter.com/login")
 
-subject = "RKMVERI"
+subject = "Goutam Adani"
 
 
 # Setup the log in
@@ -101,10 +102,10 @@ df = pd.DataFrame(zip(UserTags,TimeStamps,Tweets,Replys,reTweets,Likes)
 
 df.head()
 
-df.to_excel(r"D:\Learnerea\Tables\tweets_live.xlsx",index=False)
+df.to_excel(r"C:\Users\Ujjwa\OneDrive\Desktop\Term Projects\IIT Patna\Data Collection\tweets_live.xlsx",index=False)
 
 import os
-os.system('start "excel" "D:\Learnerea\Tables\\tweets_live.xlsx"')
+os.system('start "excel" "C:\\Users\\Ujjwa\\OneDrive\\Desktop\\Term Projects\\IIT Patna\\Data Collection\\tweets_live.xlsx"')
 
 
 
